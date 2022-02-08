@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(203, 255, 252);
+    position: relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 10px 28px 0 rgba(14, 14, 14, 0.103), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(203, 255, 252); */
+    box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+  transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+
+}
+.heart{
+    height: 100px;
+}
+.heart.open{
+    display: none;
+}
+.box-text.open{
+    display: none;
+}
+.box i{
+    color: red;
+    font-size: 60px;
+    position: relative;
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes scale {
+    0% {font-size: 60px;}
+    50% {font-size: 70px;}
+    100% {font-size: 60px;}
+}
+.box h3{
+    font-size: 25px;
+    color: rgb(39, 39, 39);
+}
+.click-box{
+    width: 100%;
+    height: 100px;
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 30px;
+}
+.click-box.open{
+    display: none;
+}
+.click-box span{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    height: 50px;
+    width: 120px;
+    line-height: 50px;
+    border-radius: 10px;
+    /* box-shadow: 0 10px 28px 0 rgba(14, 14, 14, 0.103), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(203, 255, 252); */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,
+     inset 0px 0px 0px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+   transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+    font-size: 16px;
+    color: rgba(42, 52, 84, 1);
+}
+.btn:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  }
+.no-item{
+    display: none;
+}
+.yes-item{
+    display: block;
+}
+.yes:hover > .yes-item{
+    display: none;
+}
+.yes:hover > .no-item{
+    display: block;
+}
+.text-before{
+    margin-top: 30px;
+    display: none;
+    line-height: 45px;
+}
+.text-before.open{
+    display: block;
+}

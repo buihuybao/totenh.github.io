@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="heart">
+                <i class="bi bi-heart-fill"></i>
+            </div>
+            <div class="box-text">
+                <h3>Sang năm 2022 Crush có thích bạn hay không ??</h3>
+            </div>
+            <div class="text-before">
+                <h3 style="color: red;">Không có nút 'yes' đâu !</h3>
+                <h3>Đợi chờ crush như đợi ngày 30 tết năm nay vậy 🥰</h3>
+                <h3>Có cái nịt nhé !!</h3>
+            </div>
+            <div class="click-box">
+                <span class="yes">
+                    <h4 class="btn yes-item">Có</h4>
+                    <h4 class="btn no-item">Không</h4>
+                </span>
+                <span class="no">
+                    <h4>Không</h4>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script>
+        const heart = document.querySelector(".heart");
+        const text = document.querySelector(".text-before");
+        const btnYes = document.querySelector(".yes")
+        const btnNo = document.querySelector(".no")
+        const boxText = document.querySelector(".box-text")
+        const click = document.querySelector(".click-box")
+
+        btnYes.addEventListener('click', function() {
+            heart.classList.add("open")
+            boxText.classList.add("open")
+            text.classList.add("open")
+            click.classList.add("open")
+        })
+    </script>
+</body>
+</html>
